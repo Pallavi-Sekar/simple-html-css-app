@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+    <div class="body">
+
+    <form class="formBody" name="myform" method="Post" onsubmit="return checkForm();" action=""> 
+        <h1>Online Food Store</h1>
+        <div class="formRow">
+            <label for="fullName">Name</label>
+            <input id="fullName" placeholder="Full Name" class="textInput" type="text" name="fullName"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" placeholder="123-123-1234" class="textInput" type="text" name="phoneNumber"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="postcode">Post Code</label>
+            <input id="postcode" placeholder="A1A 1A1" class="textInput" type="postcode" name="postcode"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="address">Address</label>
+            <input id="address" placeholder="Address" class="textInput" type="text" name="address"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="city">City</label>
+            <input id="city" placeholder="City" class="textInput" type="text" name="city"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="province">Province</label>
+            <input id="province" placeholder="Province" class="textInput" type="text" name="province"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="creditCard">Credit Card</label>
+            <input id="creditCard" placeholder="4111-1111-1111-1111" class="textInput" type="text" name="creditCard"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="cardExpiryMonth">Card Expiry Month</label>
+            <input id="cardExpiryMonth" placeholder="MMM" class="textInput" type="text" name="cardExpiryMonth"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="cardExpiryYear">Card Expiry Year</label>
+            <input id="cardExpiryYear" placeholder="yyyy" class="textInput" type="text" name="cardExpiryYear"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="email">Email</label>
+            <input id="email" placeholder="email@domain.com" class="textInput" type="text" name="email"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="password">Password</label>
+            <input id="password" placeholder="Password" class="textInput" type="password" name="password"><br/>
+        </div>
+
+        <div class="formRow">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" placeholder="Confirm Password" class="textInput" type="password" name="confirmPassword"><br/>
+        </div>
+
+        <p style="color: white;">Available Products</p>
+
+            <div class="formRow">
+                <label for="pizzaSelect">Pizza:</label>
+                <select id="pizzaSelect" class="pizzaSelect">
+                    <option value="">--Select--</option>
+                    <option value="Margherita">Margherita($12)</option>
+                    <option value="Pepperoni">Pepperoni($12)</option>
+                    <option value="Veggie">Veggie($12)</option>
+                    <option value="BBQ Chicken">BBQ Chicken($12)</option>
+                </select>
+                <input id= "pizzaQty" type="text" class="textInput pizzaQty" min="1" placeholder="Qty" />
+                <button type="button" onclick="addPizza()" class="textInput">Add</button>
+            </div>
+            <p id = "pizzaError"></p>
+        
+            <div class="formRow">
+                <label for="wrapSelect">Wrap:</label>
+                <select id="wrapSelect" class="wrapSelect">
+                    <option value="">--Select--</option>
+                    <option value="Chicken Wrap">Chicken Wrap($8)</option>
+                    <option value="Veggie Wrap">Veggie Wrap($8)</option>
+                    <option value="Turkey Wrap">Turkey Wrap($8)</option>
+                    <option value="Hummus Wrap">Hummus Wrap($8)</option>
+                </select>
+                <input id="wrapQty" type="text" class="textInput wrapQty" min="1" placeholder="Qty"/>
+                <button type="button" onclick="addWrap()" class="textInput">Add</button>
+            </div>
+            <p id = "WrapError"></p>
+
+        <br/>
+        <p id="formResult"></p>
+        <br/>
+
+        <input type="submit" value="Submit" class="btn">
+        <p id="errors"></p>
+    </form>  
+
+    </div>
+
+    <footer class="footer">
+        <a>© 2024 Pallavi Sekar. All rights reserved.</a>
+    </footer>
+
+</body>
+</html>

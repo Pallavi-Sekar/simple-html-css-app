@@ -1,0 +1,70 @@
+body {
+    background-color: #ececec;
+    text-align: center;
+    font-family: cursive;
+}
+
+.formBody {
+    background-color: #61acb5;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px; /* Space between each row */
+    width: 100%; /* Full width of the form */
+}
+
+label {
+    color: white;
+    margin-right: 10px; /* Space between label and input */
+    width: 150px; /* Fixed width for labels */
+}
+
+.textInput, .btn {
+    font-family: cursive;
+    border-radius: 10px;
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Add padding for better appearance */
+    margin-left: 10px; /* Space between input and label */
+}
+
+.quantity {
+    width: 60px; /* Set a specific width for quantity inputs */
+    margin-left: 10px; /* Space between input and label */
+}
+
+select {
+    font-family: cursive;
+    border-radius: 10px;
+    width: 100%; /* Full width for dropdowns */
+    padding: 8px; /* Add padding for better appearance */
+    margin-left: 10px; /* Space between dropdown and label */
+}
+
+.btn, .addBtn {
+    width: auto; /* Change button width to auto to fit text */
+    margin-left: 10px; /* Space between button and input */
+    color: black; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+p, h1 {
+    color: white;
+}
+
+.body {
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer {
+    color: black;
+}
